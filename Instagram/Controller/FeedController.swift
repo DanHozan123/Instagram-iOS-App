@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeedController.swift
 //  Instagram
 //
 //  Created by Dan Hozan on 18.02.2024.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class FeedController: UIViewController{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
+        view.backgroundColor = .systemBlue
     }
-
-
+    
 }
 
