@@ -21,7 +21,7 @@ class ProfileHeader: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = .systemPink
+        backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {
