@@ -32,7 +32,7 @@ class LoginController: UIViewController{
         return tf
     }()
     
-    private let signInButton: UIButton = {
+    private lazy var signInButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Sign In", for: .normal)
         button.setTitleColor(.white.withAlphaComponent(0.5), for: .normal)
@@ -41,6 +41,7 @@ class LoginController: UIViewController{
         button.setHeight(50)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button.isEnabled = false
+        button.addTarget(self, action: #selector(handleSignIn), for: .touchUpInside)
         return button
     }()
     
@@ -80,6 +81,19 @@ class LoginController: UIViewController{
             viewModel.password = passwordTextField.text
         }
         updateForm()
+    }
+    
+    @objc func handleSignIn(){
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        AuthService.signInUser(withEmail: email, password: password) { error in
+            if let error = error {
+                print("DEBUG: Failed to sing in user \(error.localizedDescription)")
+                return
+            }
+            self.dismiss(animated: true, completion: nil)
+        }
+        
     }
     
     //MARK: - Helpers

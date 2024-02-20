@@ -7,7 +7,7 @@
 
 import FirebaseStorage
 
-struct imageUploader {
+struct ImageUploader {
     static func uploadImage(image: UIImage, compeletion: @escaping(String) -> Void) {
         guard let imageData = image.jpegData(compressionQuality: 0.75) else { return }
         let filename = NSUUID().uuidString
