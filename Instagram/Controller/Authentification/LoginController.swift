@@ -7,11 +7,16 @@
 
 import UIKit
 
+protocol AuthentificationDelegate: AnyObject {
+    func authentificationDidComplete()
+}
+
 class LoginController: UIViewController{
     
     //MARK: - Properties
     
     private var viewModel = LoginViewModel()
+    weak var delegate: AuthentificationDelegate?
     
     private let iconImage: UIImageView = {
         let iv = UIImageView()
@@ -70,6 +75,7 @@ class LoginController: UIViewController{
     //MARK: - Actions
     @objc func handleShowSignUp() {
         let vc = RegistrationController()
+        vc.delegate = delegate
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -91,7 +97,7 @@ class LoginController: UIViewController{
                 print("DEBUG: Failed to sing in user \(error.localizedDescription)")
                 return
             }
-            self.dismiss(animated: true, completion: nil)
+            self.delegate?.authentificationDidComplete()
         }
         
     }

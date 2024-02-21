@@ -13,6 +13,7 @@ class RegistrationController: UIViewController{
     
     private var registrationViewModel = RegistrationViewModel()
     private var profileImage: UIImage?
+    weak var delegate: AuthentificationDelegate?
     
     private lazy var plusPhotoButton = {
         let button = UIButton(type: .system)
@@ -88,7 +89,7 @@ class RegistrationController: UIViewController{
                 print("DEBUG: Failed to register user \(error.localizedDescription)")
                 return
             }
-            self.dismiss(animated: true, completion: nil)
+            self.delegate?.authentificationDidComplete()
             
         }
     }

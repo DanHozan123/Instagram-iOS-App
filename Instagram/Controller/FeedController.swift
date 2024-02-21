@@ -23,6 +23,7 @@ class FeedController: UICollectionViewController{
         do {
             try Auth.auth().signOut()
             let controller = LoginController()
+            controller.delegate = self.tabBarController as? MainTabController 
             let nav = UINavigationController(rootViewController: controller)
             nav.modalPresentationStyle = .fullScreen
             self.present(nav, animated: true, completion: nil)
@@ -46,7 +47,7 @@ class FeedController: UICollectionViewController{
 extension FeedController {
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 9
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
