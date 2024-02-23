@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIViewController {
+  
     func configureGradientLayer() {
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemBlue.cgColor]
@@ -15,9 +16,13 @@ extension UIViewController {
         view.layer.addSublayer(gradient)
         gradient.frame = view.frame
     }
+
+    func showMessage(withTitle title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
 }
-
-
 
 extension UIButton {
     func attributedTitle(firstPart: String, secondPart: String) {
@@ -30,7 +35,6 @@ extension UIButton {
         setAttributedTitle(attributedTitle, for: .normal)
     }
 }
-
 extension UIView {
     func anchor(top: NSLayoutYAxisAnchor? = nil,
                 left: NSLayoutXAxisAnchor? = nil,

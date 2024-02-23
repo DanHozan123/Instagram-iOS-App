@@ -17,10 +17,15 @@
 		0E5A3BB32B83C34D0099FA4E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A3BB22B83C34D0099FA4E /* LoginController.swift */; };
 		0E5A3BB52B83C35F0099FA4E /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A3BB42B83C35F0099FA4E /* RegistrationController.swift */; };
 		0E5A3BB72B83F9610099FA4E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A3BB62B83F9610099FA4E /* CustomTextField.swift */; };
+		0E947D742B88DCFF00B5070C /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E947D732B88DCFF00B5070C /* UploadPostController.swift */; };
+		0E947D762B88E1D500B5070C /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E947D752B88E1D500B5070C /* InputTextView.swift */; };
+		0E947D782B88F51A00B5070C /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E947D772B88F51A00B5070C /* PostService.swift */; };
+		0E947D7A2B89065800B5070C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E947D792B89065800B5070C /* Post.swift */; };
+		0E947D7C2B89098A00B5070C /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E947D7B2B89098A00B5070C /* PostViewModel.swift */; };
 		0E95E2E32B85F6B200765401 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2E22B85F6B200765401 /* UserService.swift */; };
 		0E95E2E52B85F71600765401 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2E42B85F71600765401 /* Constants.swift */; };
 		0E95E2E72B86048B00765401 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2E62B86048B00765401 /* User.swift */; };
-		0E95E2E92B86084100765401 /* ProfileHeaderViewMoel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2E82B86084100765401 /* ProfileHeaderViewMoel.swift */; };
+		0E95E2E92B86084100765401 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2E82B86084100765401 /* ProfileHeaderViewModel.swift */; };
 		0E95E2EB2B861CEB00765401 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2EA2B861CEB00765401 /* UserCell.swift */; };
 		0E95E2ED2B863A1B00765401 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2EC2B863A1B00765401 /* UserCellViewModel.swift */; };
 		0EA295CF2B84C70B0037EDA2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA295CE2B84C70B0037EDA2 /* LoginViewModel.swift */; };
@@ -51,10 +56,15 @@
 		0E5A3BB22B83C34D0099FA4E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		0E5A3BB42B83C35F0099FA4E /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		0E5A3BB62B83F9610099FA4E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		0E947D732B88DCFF00B5070C /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
+		0E947D752B88E1D500B5070C /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		0E947D772B88F51A00B5070C /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		0E947D792B89065800B5070C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0E947D7B2B89098A00B5070C /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		0E95E2E22B85F6B200765401 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		0E95E2E42B85F71600765401 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E95E2E62B86048B00765401 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		0E95E2E82B86084100765401 /* ProfileHeaderViewMoel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewMoel.swift; sourceTree = "<group>"; };
+		0E95E2E82B86084100765401 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		0E95E2EA2B861CEB00765401 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		0E95E2EC2B863A1B00765401 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		0EA295CE2B84C70B0037EDA2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -160,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				0E95E2E62B86048B00765401 /* User.swift */,
+				0E947D792B89065800B5070C /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,8 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				0EA295CE2B84C70B0037EDA2 /* LoginViewModel.swift */,
-				0E95E2E82B86084100765401 /* ProfileHeaderViewMoel.swift */,
+				0E95E2E82B86084100765401 /* ProfileHeaderViewModel.swift */,
 				0E95E2EC2B863A1B00765401 /* UserCellViewModel.swift */,
+				0E947D7B2B89098A00B5070C /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -184,6 +196,7 @@
 				0EE8F6582B829F5D00E9435C /* ImageSelectorController.swift */,
 				0EE8F65A2B829F6C00E9435C /* NotificationController.swift */,
 				0EE8F65C2B829F7700E9435C /* ProfileController.swift */,
+				0E947D732B88DCFF00B5070C /* UploadPostController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +207,7 @@
 				0E59EC9E2B84FC5100A58897 /* ImageUploader.swift */,
 				0E59ECA02B84FC6000A58897 /* AuthService.swift */,
 				0E95E2E22B85F6B200765401 /* UserService.swift */,
+				0E947D772B88F51A00B5070C /* PostService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -203,6 +217,7 @@
 			children = (
 				0E04EB982B8378A600215C70 /* Extensions.swift */,
 				0E95E2E42B85F71600765401 /* Constants.swift */,
+				0E947D752B88E1D500B5070C /* InputTextView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -340,8 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E95E2E92B86084100765401 /* ProfileHeaderViewMoel.swift in Sources */,
+				0E947D7C2B89098A00B5070C /* PostViewModel.swift in Sources */,
+				0E95E2E92B86084100765401 /* ProfileHeaderViewModel.swift in Sources */,
 				0E5A3BB72B83F9610099FA4E /* CustomTextField.swift in Sources */,
+				0E947D742B88DCFF00B5070C /* UploadPostController.swift in Sources */,
 				0E59ECA52B8528B300A58897 /* ProfileHeader.swift in Sources */,
 				0EE8F6392B829C6300E9435C /* ViewController.swift in Sources */,
 				0E5A3BB32B83C34D0099FA4E /* LoginController.swift in Sources */,
@@ -354,13 +371,16 @@
 				0EA295CF2B84C70B0037EDA2 /* LoginViewModel.swift in Sources */,
 				0E95E2E72B86048B00765401 /* User.swift in Sources */,
 				0EE8F65D2B829F7700E9435C /* ProfileController.swift in Sources */,
+				0E947D762B88E1D500B5070C /* InputTextView.swift in Sources */,
 				0E95E2E52B85F71600765401 /* Constants.swift in Sources */,
 				0EE8F6552B829F3E00E9435C /* FeedController.swift in Sources */,
 				0E95E2ED2B863A1B00765401 /* UserCellViewModel.swift in Sources */,
 				0EE8F6532B829DC100E9435C /* MainTabController.swift in Sources */,
 				0E04EB992B8378A600215C70 /* Extensions.swift in Sources */,
 				0E59EC9F2B84FC5100A58897 /* ImageUploader.swift in Sources */,
+				0E947D7A2B89065800B5070C /* Post.swift in Sources */,
 				0E59ECA12B84FC6000A58897 /* AuthService.swift in Sources */,
+				0E947D782B88F51A00B5070C /* PostService.swift in Sources */,
 				0E95E2E32B85F6B200765401 /* UserService.swift in Sources */,
 				0E59ECA32B85289F00A58897 /* ProfileCell.swift in Sources */,
 				0EE8F6372B829C6300E9435C /* SceneDelegate.swift in Sources */,

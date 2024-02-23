@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Instagram wants to user your camera </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Instagram wants to use your librabry</string>
 </dict>
 </plist>
