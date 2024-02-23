@@ -10,8 +10,8 @@ import UIKit
 
 class MainTabController: UITabBarController {
     
-    
-    // MARK: - View Lifecycle
+    public var int = 1
+   
     private var user: User? {
         didSet {
             guard let user = user else { return }
@@ -19,7 +19,7 @@ class MainTabController: UITabBarController {
         }
     }
     
-    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         checkIfUserIsLoggedIn()
