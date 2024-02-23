@@ -18,6 +18,8 @@ class UploadPostController: UIViewController {
     
     weak var delegete: UploadPostControllerDelegete?
     
+    var currentUser: User?
+    
     var selectedImage: UIImage? {
         didSet { photoImageView.image = selectedImage }
     }
@@ -60,7 +62,9 @@ class UploadPostController: UIViewController {
     @objc func didTapDone() {
         guard let image = selectedImage else { return }
         guard let caption = captionTextView.text else { return }
-        PostService.uploadPost(caption: caption, image: image) { error in
+        guard let user = currentUser else { return }
+        
+        PostService.uploadPost(caption: caption, image: image, user: user) { error in
             if let error = error {
                 print("DEBUG: Failed to upload post with error", error.localizedDescription)
                 return
