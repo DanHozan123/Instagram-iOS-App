@@ -14,7 +14,7 @@ class FeedController: UICollectionViewController {
     
     //MARK: - Actions
     var posts = [Post]() {
-        didSet {collectionView.reloadData()}
+        didSet { collectionView.reloadData() }
     }
     var post: Post?
     
@@ -121,7 +121,14 @@ extension FeedController: UICollectionViewDelegateFlowLayout{
 }
 
 //MARK: - FeedCellDelegate
+
 extension FeedController : FeedCellDelegate {
+    func cell(_ cell: FeedCell, wantsToShowProfileFor uid: String) {
+        UserService.fetchUser(withUid: uid) { user in
+            let controller = ProfileController(user: user)
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
     
     func cell(_ cell: FeedCell, cellWantsToShowCommectsFor post: Post) {
         let controller =  CommentController(post: post)
@@ -129,6 +136,9 @@ extension FeedController : FeedCellDelegate {
     }
     
     func cell(_ cell: FeedCell, didLike post: Post) {
+        guard let tab = tabBarController as? MainTabController else { return }
+        guard let user = tab.user else { return }
+        
         cell.viewModel?.post.didLike.toggle()
         if post.didLike {
             PostService.unlikePost(post: post) { _ in
@@ -142,6 +152,9 @@ extension FeedController : FeedCellDelegate {
                 cell.likeButton.setImage(UIImage(named: "like_selected"), for: .normal)
                 cell.likeButton.tintColor = .red
                 cell.viewModel?.post.likes = post.likes + 1
+                
+                NotificationService.uploadNotification(toUid: post.ownerUid, fromUser: user,  type: .like, post: post)
+                
 
             }
         }

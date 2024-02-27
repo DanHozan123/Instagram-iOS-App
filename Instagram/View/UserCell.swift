@@ -21,7 +21,6 @@ class UserCell: UITableViewCell {
         iv.backgroundColor = .lightGray
         iv.contentMode = .scaleAspectFit
         iv.clipsToBounds = true
-        iv.image = UIImage(named: "Daniel Day-Lewis1")
         return iv
     }()
     

@@ -122,11 +122,16 @@ extension CommentController: UICollectionViewDelegateFlowLayout {
 extension CommentController: CommentInputAccesoryViewDelegate {
     func inputView(_ inputView: CommentInputAccesoryView, wantsToUploadComment comment: String) {
         guard let tab = tabBarController as? MainTabController else { return }
-        guard let user = tab.user else { return }
+        guard let currentUser = tab.user else { return }
         
-        CommentService.uploadComment(comment: comment, postID: post.postId, user: user) { error in
+        CommentService.uploadComment(comment: comment, postID: post.postId, user: currentUser) { error in
             inputView.clearCommenttextView()
+            NotificationService.uploadNotification(toUid: self.post.ownerUid,
+                                                   fromUser: currentUser,
+                                                   type: .comment,
+                                                   post: self.post)
         }
+        
     }
     
     
