@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0E04EB972B83720300215C70 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04EB962B83720300215C70 /* FeedCell.swift */; };
 		0E04EB992B8378A600215C70 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E04EB982B8378A600215C70 /* Extensions.swift */; };
+		0E4A656E2B8C8E5D00A2A51E /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A656D2B8C8E5D00A2A51E /* CommentController.swift */; };
+		0E4A65702B8C92BB00A2A51E /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A656F2B8C92BB00A2A51E /* CommentCell.swift */; };
+		0E4A65722B8CC8FE00A2A51E /* CommentInputAccesoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A65712B8CC8FE00A2A51E /* CommentInputAccesoryView.swift */; };
+		0E4A65742B8CDE4900A2A51E /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A65732B8CDE4900A2A51E /* CommentService.swift */; };
+		0E4A65762B8CE28100A2A51E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A65752B8CE28100A2A51E /* Comment.swift */; };
+		0E4A65782B8CE9B700A2A51E /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A65772B8CE9B700A2A51E /* CommentViewModel.swift */; };
 		0E59EC9F2B84FC5100A58897 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59EC9E2B84FC5100A58897 /* ImageUploader.swift */; };
 		0E59ECA12B84FC6000A58897 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59ECA02B84FC6000A58897 /* AuthService.swift */; };
 		0E59ECA32B85289F00A58897 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59ECA22B85289F00A58897 /* ProfileCell.swift */; };
@@ -48,6 +54,12 @@
 		025F5C159791DF788861BC5D /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		0E04EB962B83720300215C70 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		0E04EB982B8378A600215C70 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0E4A656D2B8C8E5D00A2A51E /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
+		0E4A656F2B8C92BB00A2A51E /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		0E4A65712B8CC8FE00A2A51E /* CommentInputAccesoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccesoryView.swift; sourceTree = "<group>"; };
+		0E4A65732B8CDE4900A2A51E /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		0E4A65752B8CE28100A2A51E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		0E4A65772B8CE9B700A2A51E /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 		0E59EC9E2B84FC5100A58897 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		0E59ECA02B84FC6000A58897 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		0E59ECA22B85289F00A58897 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -162,6 +174,8 @@
 				0E04EB962B83720300215C70 /* FeedCell.swift */,
 				0E5A3BB62B83F9610099FA4E /* CustomTextField.swift */,
 				0E95E2EA2B861CEB00765401 /* UserCell.swift */,
+				0E4A656F2B8C92BB00A2A51E /* CommentCell.swift */,
+				0E4A65712B8CC8FE00A2A51E /* CommentInputAccesoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +185,7 @@
 			children = (
 				0E95E2E62B86048B00765401 /* User.swift */,
 				0E947D792B89065800B5070C /* Post.swift */,
+				0E4A65752B8CE28100A2A51E /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +197,7 @@
 				0E95E2E82B86084100765401 /* ProfileHeaderViewModel.swift */,
 				0E95E2EC2B863A1B00765401 /* UserCellViewModel.swift */,
 				0E947D7B2B89098A00B5070C /* PostViewModel.swift */,
+				0E4A65772B8CE9B700A2A51E /* CommentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -197,6 +213,7 @@
 				0EE8F65A2B829F6C00E9435C /* NotificationController.swift */,
 				0EE8F65C2B829F7700E9435C /* ProfileController.swift */,
 				0E947D732B88DCFF00B5070C /* UploadPostController.swift */,
+				0E4A656D2B8C8E5D00A2A51E /* CommentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,6 +225,7 @@
 				0E59ECA02B84FC6000A58897 /* AuthService.swift */,
 				0E95E2E22B85F6B200765401 /* UserService.swift */,
 				0E947D772B88F51A00B5070C /* PostService.swift */,
+				0E4A65732B8CDE4900A2A51E /* CommentService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -355,14 +373,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4A65782B8CE9B700A2A51E /* CommentViewModel.swift in Sources */,
 				0E947D7C2B89098A00B5070C /* PostViewModel.swift in Sources */,
 				0E95E2E92B86084100765401 /* ProfileHeaderViewModel.swift in Sources */,
 				0E5A3BB72B83F9610099FA4E /* CustomTextField.swift in Sources */,
+				0E4A656E2B8C8E5D00A2A51E /* CommentController.swift in Sources */,
 				0E947D742B88DCFF00B5070C /* UploadPostController.swift in Sources */,
 				0E59ECA52B8528B300A58897 /* ProfileHeader.swift in Sources */,
 				0EE8F6392B829C6300E9435C /* ViewController.swift in Sources */,
 				0E5A3BB32B83C34D0099FA4E /* LoginController.swift in Sources */,
 				0E04EB972B83720300215C70 /* FeedCell.swift in Sources */,
+				0E4A65742B8CDE4900A2A51E /* CommentService.swift in Sources */,
+				0E4A65762B8CE28100A2A51E /* Comment.swift in Sources */,
 				0EE8F6592B829F5D00E9435C /* ImageSelectorController.swift in Sources */,
 				0EE8F65B2B829F6C00E9435C /* NotificationController.swift in Sources */,
 				0E95E2EB2B861CEB00765401 /* UserCell.swift in Sources */,
@@ -380,11 +402,13 @@
 				0E59EC9F2B84FC5100A58897 /* ImageUploader.swift in Sources */,
 				0E947D7A2B89065800B5070C /* Post.swift in Sources */,
 				0E59ECA12B84FC6000A58897 /* AuthService.swift in Sources */,
+				0E4A65722B8CC8FE00A2A51E /* CommentInputAccesoryView.swift in Sources */,
 				0E947D782B88F51A00B5070C /* PostService.swift in Sources */,
 				0E95E2E32B85F6B200765401 /* UserService.swift in Sources */,
 				0E59ECA32B85289F00A58897 /* ProfileCell.swift in Sources */,
 				0EE8F6372B829C6300E9435C /* SceneDelegate.swift in Sources */,
 				0E5A3BB52B83C35F0099FA4E /* RegistrationController.swift in Sources */,
+				0E4A65702B8C92BB00A2A51E /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
