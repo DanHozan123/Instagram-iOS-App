@@ -34,7 +34,8 @@
 		0E95E2E92B86084100765401 /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2E82B86084100765401 /* ProfileHeaderViewModel.swift */; };
 		0E95E2EB2B861CEB00765401 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2EA2B861CEB00765401 /* UserCell.swift */; };
 		0E95E2ED2B863A1B00765401 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95E2EC2B863A1B00765401 /* UserCellViewModel.swift */; };
-		0EA295CF2B84C70B0037EDA2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA295CE2B84C70B0037EDA2 /* LoginViewModel.swift */; };
+		0E9E83652B8F698C00B79AD7 /* ResetPasswordContorller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9E83642B8F698C00B79AD7 /* ResetPasswordContorller.swift */; };
+		0EA295CF2B84C70B0037EDA2 /* AuthentificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA295CE2B84C70B0037EDA2 /* AuthentificationViewModel.swift */; };
 		0ED31EA02B8DE9BA00CBFA41 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED31E9F2B8DE9BA00CBFA41 /* NotificationCell.swift */; };
 		0ED31EA22B8DF5C900CBFA41 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED31EA12B8DF5C900CBFA41 /* Notification.swift */; };
 		0ED31EA42B8DF93500CBFA41 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED31EA32B8DF93500CBFA41 /* NotificationService.swift */; };
@@ -83,7 +84,8 @@
 		0E95E2E82B86084100765401 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		0E95E2EA2B861CEB00765401 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		0E95E2EC2B863A1B00765401 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
-		0EA295CE2B84C70B0037EDA2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0E9E83642B8F698C00B79AD7 /* ResetPasswordContorller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordContorller.swift; sourceTree = "<group>"; };
+		0EA295CE2B84C70B0037EDA2 /* AuthentificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthentificationViewModel.swift; sourceTree = "<group>"; };
 		0ED31E9F2B8DE9BA00CBFA41 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		0ED31EA12B8DF5C900CBFA41 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		0ED31EA32B8DF93500CBFA41 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				0E5A3BB22B83C34D0099FA4E /* LoginController.swift */,
 				0E5A3BB42B83C35F0099FA4E /* RegistrationController.swift */,
+				0E9E83642B8F698C00B79AD7 /* ResetPasswordContorller.swift */,
 			);
 			path = Authentification;
 			sourceTree = "<group>";
@@ -203,7 +206,7 @@
 		0EE8F64E2B829D1A00E9435C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				0EA295CE2B84C70B0037EDA2 /* LoginViewModel.swift */,
+				0EA295CE2B84C70B0037EDA2 /* AuthentificationViewModel.swift */,
 				0E95E2E82B86084100765401 /* ProfileHeaderViewModel.swift */,
 				0E95E2EC2B863A1B00765401 /* UserCellViewModel.swift */,
 				0E947D7B2B89098A00B5070C /* PostViewModel.swift */,
@@ -404,7 +407,7 @@
 				0E95E2EB2B861CEB00765401 /* UserCell.swift in Sources */,
 				0EE8F6572B829F4D00E9435C /* SearchController.swift in Sources */,
 				0EE8F6352B829C6300E9435C /* AppDelegate.swift in Sources */,
-				0EA295CF2B84C70B0037EDA2 /* LoginViewModel.swift in Sources */,
+				0EA295CF2B84C70B0037EDA2 /* AuthentificationViewModel.swift in Sources */,
 				0E95E2E72B86048B00765401 /* User.swift in Sources */,
 				0EE8F65D2B829F7700E9435C /* ProfileController.swift in Sources */,
 				0E947D762B88E1D500B5070C /* InputTextView.swift in Sources */,
@@ -413,6 +416,7 @@
 				0E95E2ED2B863A1B00765401 /* UserCellViewModel.swift in Sources */,
 				0EE8F6532B829DC100E9435C /* MainTabController.swift in Sources */,
 				0E04EB992B8378A600215C70 /* Extensions.swift in Sources */,
+				0E9E83652B8F698C00B79AD7 /* ResetPasswordContorller.swift in Sources */,
 				0E59EC9F2B84FC5100A58897 /* ImageUploader.swift in Sources */,
 				0ED31EA42B8DF93500CBFA41 /* NotificationService.swift in Sources */,
 				0E947D7A2B89065800B5070C /* Post.swift in Sources */,
